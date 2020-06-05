@@ -1,6 +1,7 @@
 # 네이버 검색 API예제는 블로그를 비롯 전문자료까지 호출방법이 동일하므로 blog검색만 대표로 예제를 올렸습니다.
 # 네이버 검색 Open API 예제 - 블로그 검색
 # url 변수에 원하는 링크 및 요청 쿼리를 전달 하면 됨
+# - [네이버 어플리케이션페이지](https://developers.naver.com/apps/#/list)
 
 import os
 import sys
