@@ -10,6 +10,7 @@
 <br>  
 
 ### 쿠팡 API
+- python 3.8 이상 사용 (HMAC)
 - [HMAC signature Error](https://mingtrace.tistory.com/508)
 - [타임아웃 Error](https://developers.coupang.com/hc/ko/articles/360022937714-%ED%83%80%EC%9E%84%EC%95%84%EC%9B%83-timeout-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%A9%EB%8B%88%EB%8B%A4-)
 
