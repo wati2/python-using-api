@@ -12,11 +12,11 @@ os.environ['TZ'] = 'GMT+0'
 datetime=time.strftime('%y%m%d')+'T'+time.strftime('%H%M%S')+'Z'
 method = "GET"
 #replace with your own vendorId
-vernderId = memo.vernderId
+vendorId = memo.vendorId
 accesskey = memo.accesskey
 secretkey = memo.secretkey
 
-path = "/v2/providers/openapi/apis/api/v4/vendors/" + vernderId + "/returnRequests"
+path = "/v2/providers/openapi/apis/api/v4/vendors/" + vendorId + "/returnRequests"
 query = urllib.parse.urlencode({"createdAtFrom": "2018-08-08", "createdAtTo": "2018-08-08", "status": "UC"})
 
 message = datetime+method+path+query
