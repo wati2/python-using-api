@@ -20,12 +20,8 @@ path = "/v2/providers/openapi/apis/api/v4/vendors/" + vendorId + "/returnRequest
 query = urllib.parse.urlencode({"createdAtFrom": "2018-08-08", "createdAtTo": "2018-08-08", "status": "UC"})
 
 message = datetime+method+path+query
-
-
 signature=hmac.new(secretkey.encode('utf-8'),message.encode('utf-8'),hashlib.sha256).hexdigest()
-
 authorization  = "CEA algorithm=HmacSHA256, access-key="+accesskey+", signed-date="+datetime+", signature="+signature
-#print(authorization)
 
 # ************* SEND THE REQUEST *************
 url = "https://api-gateway.coupang.com"+path+"?%s" % query
