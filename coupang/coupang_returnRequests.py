@@ -16,8 +16,15 @@ import hmac, hashlib
 import urllib.parse
 import urllib.request
 import ssl
+import json
 # venderId, accesskey, secretkey 파일(memo.py)로 따로 관리
 import memo
+
+# 현재경로
+currentDirectory = os.getcwd()
+file_path = currentDirectory + "\\result.json"
+
+
 
 os.environ['TZ'] = 'GMT+0'
 
@@ -65,3 +72,6 @@ else:
     # 200
     body = resp.read().decode(resp.headers.get_content_charset())
     print(body)
+
+    # with open(file_path, 'w', encoding='utf-8') as outfile:
+    #     json.dump(body, outfile, indent=4, ensure_ascii=False)
